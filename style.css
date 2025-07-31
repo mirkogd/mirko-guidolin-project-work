@@ -1,0 +1,658 @@
+/* CSS per l'impostazione degli stili della pagina "Sostenibilità Fabbri 1905 - Report" - Project Work di Mirko Guidolin */
+
+/* reset delle impostazioni di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* contenitore principale */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* impostazioni per l'header, con font, logo etc. */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* imposto dello spazio sopra il menu di navigazione */
+.main-nav {
+    margin-top: 20px;
+}
+
+/* imposto la visualizzazione del menu di navigazione in orizzontale, centrata, e va a capo se non c'è spazio */
+.menu-lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-lista li {
+    /* non imposto niente, flex si occupa di tutto */
+}
+
+/* imposto il colore della lista del menù */
+.menu-lista a {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* imposto il colore della lista del menù quando si va sopra col mouse*/
+.menu-lista a:hover {
+    background-color: #002244;
+	color: white;
+}
+
+/* imposto il menu hamburger per i dispositivi mobili */
+.hamburger {
+    display: none;
+    background-color: #0066cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+/* imposto le sezioni "normali" sempre visibili */
+.sezione-normale {
+    background-color: white;
+    margin: 30px 0;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border-left: 5px solid #0066cc;
+}
+
+/* impostazioni per le sezioni collassabili */
+.sezione-collassabile {
+    background-color: white;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border-left: 5px solid #3399cc;
+}
+
+/* contenuto dentro le sezioni collassabili dando del margine */
+.contenuto-details {
+    margin-top: 15px;
+}
+
+/* imposto i titoli delle sezioni "normali" */
+.sezione-normale h2 {
+    color: #003366;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+}
+
+/* imposto i titoli delle sezioni collassabili */
+.sezione-collassabile summary h2 {
+    color: #003366;
+    font-size: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: inline;
+}
+
+/* imposto lo stile dei titoli delle sezioni collassabili impostando il mouse quando si va sopra per far capire che è cliccabile */
+.sezione-collassabile summary {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* cambio il colore del titolo delle sezioni collassabili quando si va sopra col mouse */
+.sezione-collassabile summary:hover h2 {
+    color: #0066cc;
+}
+
+/* imposto i paragrafi generici */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* imposto il container per il download del bilancio di sostenibilità */
+.download-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* imposto il link per il download */
+.link-download-principale {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* imposto il link per il download quando c'è il mouse sopra */
+.link-download-principale:hover {
+    background-color: #002244;
+	color: white;
+    transform: translateY(-2px);
+}
+
+/* imposto container per le card dei valori */
+.valori-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* imposto lo stile delle card dei valori */
+.valore-item {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 4px solid #0066cc;
+}
+
+/* imposto i titoli delle card dei valori */
+.valore-item h3 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* imposto il testo delle card dei valori */
+.valore-item p {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* imposto il container delle FAQ */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* imposto lo stile del container delle FAQ */
+.faq-singola {
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    border-left: 3px solid #0066cc;
+    padding: 15px;
+}
+
+/* imposto lo stile delle FAQ per far capire che sono cliccabili */
+.faq-singola summary {
+    font-weight: bold;
+    color: #003366;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+/* cambio colore alle FAQ quando si va sopra col mouse */
+.faq-singola summary:hover {
+    color: #0066cc;
+}
+
+/* imposto un po' di spazio sulla risposta per separarla dalla domanda */
+.faq-risposta {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+/* rendo un po' più compatto le risposte togliendo dello spazio sotto */
+.faq-risposta p {
+    margin-bottom: 0;
+}
+
+/* imposto i margini del form contatti */
+.contact-form {
+    margin-top: 20px;
+}
+
+/* imposto le colonne del form contatti */
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+/* imposto i campi del form contatti */
+.form-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* do del margine ai campi */
+.form-field-full {
+    margin-bottom: 15px;
+}
+
+/* do del margine alle etichette dei campi */
+.form-field label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* imposto separatamente gli stili dei campi input perché sono campi di tipo diverso */
+
+/* imposto i campi di tipo text che sono nominativo del richiedente e oggetto */
+.form-field input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* imposto campo mail  */
+.form-field input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* imposto il campo area di testo destinata al testo del messaggio */
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+/* Impostazione del pulsante di invio con flexbox container */
+.form-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* imposto formattazione pulsante di invio */
+.btn-invia {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* imposto il pulsante di invio quando si va sopra col mouse */
+.btn-invia:hover {
+    background-color: #002244;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* imposto il footer della pagina */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+/* assegno un layout flessibile al footer della pagina mettendo le info a sinistra e i link a destra con wrap automatico */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* imposto margini e font delle info nel footer */
+.footer-info p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* allineo i link nel footer e gli do spazio tra loro */
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* imposto stile dei link del footer */
+.footer-link {
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* cambio colore ai link del footer quando si va sopra col mouse */
+.footer-link:hover {
+    color: #ccc;
+}
+
+/* imposto il colore per tutti i link generici presenti nella pagina */
+a {
+    color: #0066cc;
+}
+
+/* imposto i colori per i link generici presenti nella pagina quando si va sopra col mouse */
+a:hover {
+    color: #0080ff;
+}
+
+/* impostazioni per la nota sulla fonte del documento da scaricare */
+.nota-fonte {
+    color: #666;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* imposto un font piccolo per la nota sulla fonte, come si fa di solito per le note */
+.nota-fonte small {
+    font-size: 12px;
+}
+
+/* metto in grigio il link della nota della fonte */
+.nota-fonte a {
+    color: #666;
+}
+
+/* imposto colore della nota della fonte quando si va sopra col mouse */
+.nota-fonte a:hover {
+    color: #0066cc;
+}
+
+/* creo classi di utilità per applicare velocemente formattazione */
+/* classe per centrare un elemento */
+.centro {
+    text-align: center;
+}
+
+/* classe per nascondere un elemento */
+.nascosto {
+    display: none;
+}
+
+/* classe per impostare grassetto su un elemento */
+.grassetto {
+    font-weight: bold;
+}
+
+/* miglioro l'accessibilità aggiungendo un contorno visibile sugli elementi quando hanno il focus */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}
+
+/* questo è il codice per rendere la pagina responsive per i dispositivi mobili (quindi fino a 768 pixel) */
+/* imposto un container più stretto */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+	/* riduco il font del titolo */
+    header h1 {
+        font-size: 24px;
+    }
+
+	/* mostro il pulsante hamburger su dispositivi mobili */
+    .hamburger {
+        display: block;
+    }
+    
+    /* configuro il menu mobile in versione verticale nascosta */
+    .menu-lista {
+        display: none;
+        flex-direction: column;
+        background-color: #003366;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+        gap: 5px;
+    }
+    
+    /* mostro il menu mobile quando ha classe è "aperto" */
+    .menu-lista.aperto {
+        display: flex;
+    }
+    
+    /* imposto che ogni voce di menu occupa tutta la larghezza disponibile */
+    .menu-lista li {
+        width: 100%;
+    }
+    
+    /* imposto che i link del menu sono centrati e occupano tutta la larghezza */
+    .menu-lista a {
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* riduco la dimensione del logo aziendale nei dispositivi mobili */
+    .logo {
+        width: 120px;
+    }
+    
+    /* riduco le dimensioni e spazi delle sezioni su mobile per usare meno spazio nelle sezioni */
+    .sezione-normale,
+    .sezione-collassabile {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    /* imposto dei titoli più piccoli per i schermi dei dispositivi mobili */
+    .sezione-normale h2,
+    .sezione-collassabile summary h2 {
+        font-size: 18px;
+    }
+    
+    /* imposto verticalmente le card dei valori su dispositivi mobili */
+    .valori-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* elimino la larghezza minima per permettere di adattarsi meglio ai dispositivi mobili */
+    .valore-item {
+        min-width: auto;
+    }
+    
+    /* impostazioni per la form di richiesta sui dispositivi mobili */
+    /* imposto i campi in colonne */
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* imposto font per evitare che iPhone faccia zoom automatico sui campi, impostazione trovata consigliata online */
+    .form-field input[type="text"],
+    .form-field input[type="email"],
+    .form-field textarea {
+        font-size: 16px; 
+    }
+    
+    /* footer in colonna e centrato */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    /* imposto link del footer centrati */
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+/* impostazioni responsive per i tablet (dimensione tra 769 e 1024) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* imposto container più stretto nei tablet */
+    .container {
+        width: 85%;
+    }
+    
+    /* riduco lo spazio del menù */
+    .menu-lista {
+        gap: 8px;
+    }
+    
+    /* riduce il padding e il font dei menù con link */
+    .menu-lista a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    /* riduco le dimensioni del logo */
+    .logo {
+        width: 140px;
+    }
+    
+    /* riduco il gap tra gli elementi */
+    .valori-container {
+        gap: 15px;
+    }
+    
+    /* riduco la larghezza minima delle card */
+    .valore-item {
+        min-width: 200px;
+    }
+}
+
+/* responsive per schermi grandi oltre 1200 pixel */
+@media (min-width: 1200px) {
+    /* imposto la dimensione del container per schermi grandi */
+    .container {
+        max-width: 1200px;
+    }
+    
+    /* imposto font del titolo */
+    header h1 {
+        font-size: 32px;
+    }
+    
+    /* imposto le dimensioni del logo */
+    .logo {
+        width: 180px;
+    }
+    
+    /* più spazio per i valori su schermi grandi */
+    .valori-container {
+        gap: 25px;
+    }
+}
+
+/* assegno delle impostazioni specifiche per migliorare la stampa della pagina */
+@media print {
+    /* rimuove menu hamburger, di navigazione e form contatti dalla stampa */
+    .hamburger,
+    .main-nav,
+    .contact-form {
+        display: none;
+    }
+    
+    /* imposto fondo bianco per evitare spreco di inchiostro */
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    /* imposto l'header in bianco e nero per migliorare la stampa */
+    header {
+        background-color: white;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+    
+    /* mostro tutti i titoli delle sezioni in grassetto */
+    .sezione-collassabile summary {
+        display: block;
+        font-weight: bold;
+    }
+	
+}
+
+/* ultime impostazioni per applicare qualche fix per problemi che ho trovato */
+
+/* rimuove l'evidenziazione grigia quando si tocca sui link del menu su dispositivi touch */
+.menu-lista a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* aggiunti i prefissi Microsoft per far funzionare flexbox su IE11, so che è ancora usato e testando dava problemi */
+.valori-container {
+    -ms-flex-wrap: wrap;
+}
+
+.form-row {
+    -ms-flex-direction: row;
+}
+
+/* creato un leggero effetto di animazioni facendo che le card dei valori si alzino di 2px quando ci si passa sopra col mouse */
+.valore-item:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s;
+}
+
+/* impostato che le faq cambiano colore di sfondo (un po' più chiaro) quando si passa sopra col mouse */
+.faq-singola:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+/* TODO: fare delle prove più approfondite su Safari mobile con dispositivi fisici per i quali ho fatti solo test usando gli strumenti di sviluppo di Firefox e di Chrome */
+
+/* fine del file css */

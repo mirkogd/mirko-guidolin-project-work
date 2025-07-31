@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   <!-- utilizzo di charset per i caratteri italiani -->
+   <meta charset="utf-8"/>
+   <!-- imposto viewport per permettere alla pagina di adattarsi agli schermi mobile -->
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <!-- assegno un titolo alla pagina -->
+   <title>Sostenibilità Fabbri 1905 - Report</title>
+   <!-- imposto il css su file esterno -->
+   <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+   <!-- header della pagina -->
+   <header>
+       <div class="container">
+           <!-- imposto il logo aziendale recuperandolo dal sito di Fabbri 1905 -->
+           <img alt="Logo Fabbri 1905" 
+                class="logo" 
+                src="https://www.fabbri1905.com/imgpub/2038013/0/0/risorsa_12.svg"/>
+           
+           <!-- titolo principale scelto da visualizzare nella pagina -->
+           <h1>L'Impegno di Fabbri 1905 per la Sostenibilità</h1>
+           
+           <!-- sottotitolo -->
+           <p>Scopri l'impegno di Fabbri 1905 nella sostenibilità, un valore radicato fin dal 1905, 
+              che unisce rispetto per l'ambiente, valorizzazione delle persone e trasparenza.</p>
+           
+           <!-- per i soli dispositivi mobili ho scelto di usare un menu hamburger in modo da migliorare la visualizzazione -->
+           <div class="hamburger" id="hamburger-menu" 
+                onclick="toggleMenuMobile()">
+               ☰ Menù
+           </div>
+           
+           <!-- menu di navigazione con le sezioni che ho scelto di includere nella pagina -->
+           <nav class="main-nav">
+               <ul id="menu-principale" class="menu-lista">
+                   <li><a href="#intro-sostenibilita">Introduzione</a></li>
+                   <li><a href="#bilanci">Bilanci</a></li>
+                   <li><a href="#storia">La Nostra Storia</a></li>
+                   <li><a href="#valori">I Nostri Valori</a></li>
+                   <li><a href="#impegni-sociali">Impegni Sociali</a></li>
+                   <li><a href="#innovazione">Innovazione</a></li>
+                   <li><a href="#faq">FAQ</a></li>
+                   <li><a href="#contatti">Contatti</a></li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+
+   <!-- contenuto principale della pagina -->
+   <main>
+       <div class="container">
+           
+           <!-- introduzione che resta sempre visibile -->
+           <section class="sezione-normale" id="intro-sostenibilita">
+               <h2>La Nostra Visione di Sostenibilità</h2>
+               
+               <p>
+                   Fabbri 1905, azienda storica da sempre legata ai preziosi frutti della terra, 
+                   integra la sostenibilità nel suo operato con un approccio naturale e profondo. 
+                   L'azienda si impegna a garantire che progetti, processi, metodologie e materie prime 
+                   rispettino l'equilibrio territoriale, prevengano l'inquinamento e tutelino l'ambiente 
+                   e il paesaggio, basandosi sulla ricerca scientifica e le migliori esperienze.
+               </p>
+               
+               <p>
+                   La grandezza di Fabbri 1905 si estende anche alle sue persone, la cui straordinaria 
+                   passione e la costante innovazione guidano la missione aziendale. A partire dal 2022, 
+                   Fabbri 1905 ha formalizzato questo impegno, pubblicando il primo Bilancio di Sostenibilità. 
+                   L'obiettivo è duplice: prepararsi agli obblighi di rendicontazione futuri e comunicare 
+                   con crescente trasparenza l'operato, la strategia di sostenibilità e gli impatti economici, 
+                   sociali e ambientali a tutti gli stakeholder. Questi elementi diventano così condivisi 
+                   e di pubblico accesso.
+               </p>
+           </section>
+
+           <!-- sezione dei bilanci sempre visibile per permettere sempre lo scaricamento del file -->
+           <section class="sezione-normale" id="bilanci">
+               <h2>Bilancio di Sostenibilità 2024</h2>
+               
+               <p>Nel 2025 Fabbri 1905 ha pubblicato il suo terzo Bilancio di Sostenibilità, 
+                  che si riferisce al periodo dal 1° gennaio 2024 al 31 dicembre 2024. 
+                  Il perimetro di rendicontazione dei dati e delle informazioni contenute nello stesso 
+                  è relativo allo stabilimento amministrativo di Bologna e a quello produttivo di 
+                  Anzola dell'Emilia, che insieme rappresentano Fabbri 1905. 
+                  Scarica il documento ufficiale qui sotto per maggiori dettagli:</p>
+               
+               <!-- container flex per il download del bilancio di sostenibilità recuperato dal sito dell'Osservatorio con citazione della fonte -->
+               <div class="download-container">
+                   <a class="link-download-principale" 
+                      href="https://osservatorio-economia-circolare.b-cdn.net/documents/bilancio_di_sostenibilita_fabbri_1905_2024.pdf" 
+                      target="_blank" 
+                      title="Scarica il Bilancio di Sostenibilità Fabbri 1905 - Anno 2024">
+                        Scarica il Bilancio di Sostenibilità 2024
+                   </a>
+               </div>
+               
+               <p class="nota-fonte">
+                   <small>
+                       Fonte del documento: 
+                       <a href="https://www.osservatoriobilancisostenibilita.it/" 
+                          target="_blank">
+                           Osservatorio Bilanci Sostenibilità
+                       </a>. 
+                       - per il rispetto del diritto d'autore e della trasparenza.
+					   Il bilancio è qui riportato a fini didattici come caso studio per il Project Work.
+                   </small>
+               </p>
+           </section>
+
+           <!-- sezione con richiamo alla storia dell'azienda - collassabile -->
+           <details class="sezione-collassabile" id="storia">
+               <summary>
+                   <h2>La Nostra Storia di Sostenibilità</h2>
+               </summary>
+               
+               <div class="contenuto-details">
+                   <p>Il percorso di Fabbri 1905 verso la sostenibilità è radicato nella sua lunga storia, 
+                      iniziata con un profondo rispetto per la materia prima e l'ambiente che la fornisce. 
+                      Fin dalle origini, l'azienda ha integrato principi di gestione responsabile.</p>
+                   
+                   <p>
+                       Negli anni, abbiamo progressivamente formalizzato questi impegni, trasformando 
+                       la sensibilità in strategie concrete. Dalla gestione delle risorse idriche 
+                       all'ottimizzazione energetica, ogni passo è stato guidato dalla consapevolezza 
+                       del nostro impatto e dalla volontà di contribuire a un futuro più sostenibile.
+                   </p>
+               </div>
+           </details>
+
+           <!-- sezione dedicata ai valori aziendali - collassabile -->
+           <details class="sezione-collassabile" id="valori">
+               <summary>
+                   <h2>I Nostri Valori Fondamentali</h2>
+               </summary>
+               
+               <div class="contenuto-details">
+                   <p>La sostenibilità in Fabbri 1905 si fonda su pilastri solidi che guidano 
+                      ogni nostra azione e decisione:</p>
+                   
+                   <!-- container flex per visualizzare i 4 valori dell'azienda in modo visivamente "curato" -->
+                   <div class="valori-container">
+                       <div class="valore-item">
+                           <h3>Rispetto per l'Ambiente</h3>
+                           <p>Minimizzare l'impronta ecologica attraverso processi efficienti e 
+                              gestione responsabile delle risorse.</p>
+                       </div>
+                       
+                       <div class="valore-item">
+                           <h3>Valore per le Persone</h3>
+                           <p>Promuovere un ambiente di lavoro equo e inclusivo, investire nella 
+                              crescita dei dipendenti e sostenere le comunità locali.</p>
+                       </div>
+                       
+                       <div class="valore-item">
+                           <h3>Qualità e Innovazione</h3>
+                           <p>Ricerca costante di eccellenza nei prodotti e nei processi, 
+                              con un occhio alla sostenibilità.</p>
+                       </div>
+                       
+                       <div class="valore-item">
+                           <h3>Trasparenza ed Etica</h3>
+                           <p>Comunicare in modo chiaro e onesto i nostri progressi e 
+                              le nostre sfide in ambito ESG.</p>
+                       </div>
+                   </div>
+               </div>
+           </details>
+
+           <!-- sezione dedicata agli impegni sociali dell'azienda - collassabile -->
+           <details class="sezione-collassabile" id="impegni-sociali">
+               <summary>
+                   <h2>I Nostri Impegni Sociali</h2>
+               </summary>
+               
+               <div class="contenuto-details">
+                   <p>Fabbri 1905 crede fermamente che la responsabilità d'impresa si estenda oltre 
+                      gli aspetti ambientali e economici. Il benessere delle persone e della comunità 
+                      è al centro della nostra strategia sociale.</p>
+                   
+                   <p>
+                       Ci impegniamo a garantire condizioni di lavoro sicure e stimolanti, promuovendo 
+                       la diversità e l'inclusione. Supportiamo inoltre iniziative locali e progetti 
+                       sociali che contribuiscono al miglioramento della qualità della vita nelle aree 
+                       in cui operiamo, costruendo relazioni solide e durature con i nostri stakeholder.
+                   </p>
+               </div>
+           </details>
+
+           <!-- sezione dedicata all'innovazione - collassabile -->
+           <details class="sezione-collassabile" id="innovazione">
+               <summary>
+                   <h2>Innovazione e Qualità Sostenibile</h2>
+               </summary>
+               
+               <div class="contenuto-details">
+                   <p>L'innovazione è il motore che spinge Fabbri 1905 a creare prodotti di eccellenza, 
+                      ma sempre nel rispetto dei principi di sostenibilità. La ricerca e sviluppo sono 
+                      costantemente orientate a trovare soluzioni che riducano l'impatto ambientale e 
+                      migliorino l'efficienza dei processi produttivi.</p>
+                   
+                   <p>
+                       Dall'ottimizzazione del packaging all'implementazione di tecnologie più pulite, 
+                       ogni innovazione è valutata anche in termini di beneficio ambientale e sociale, 
+                       assicurando che la qualità dei nostri prodotti vada di pari passo con la nostra 
+                       responsabilità verso il pianeta e le generazioni future.
+                   </p>
+               </div>
+           </details>
+
+           <!-- per rendere la pagina più completa ho creato una sezione faq con 3 sotto-sezioni di domande/risposte di esempio - collassabile -->
+           <details class="sezione-collassabile" id="faq">
+               <summary>
+                   <h2>Domande Frequenti sulla Sostenibilità</h2>
+               </summary>
+               
+               <div class="contenuto-details">
+                   <!-- container per le faq con flexbox -->
+                   <div class="faq-container">
+                       
+                       <!-- faq n.1 -->
+                       <details class="faq-singola">
+                           <summary>Da quando Fabbri 1905 pubblica i bilanci di sostenibilità?</summary>
+                           <div class="faq-risposta">
+                               <p>Fabbri 1905 ha iniziato il suo percorso di rendicontazione della sostenibilità 
+                                  a partire dal <strong>2022</strong>, pubblicando il suo primo Bilancio di 
+                                  Sostenibilità in quell'anno.</p>
+                           </div>
+                       </details>
+                       
+                       <!-- faq n.2 -->
+                       <details class="faq-singola">
+                           <summary>Qual è il perimetro di rendicontazione del Bilancio 2024?</summary>
+                           <div class="faq-risposta">
+                               <p>Il Bilancio di Sostenibilità 2024 si riferisce al periodo 1° gennaio 2024 - 
+                                  31 dicembre 2024 e il perimetro dei dati e delle informazioni include 
+                                  lo stabilimento amministrativo di Bologna e quello produttivo di Anzola dell'Emilia.</p>
+                           </div>
+                       </details>
+                       
+                       <!-- faq n.3 -->
+                       <details class="faq-singola">
+                           <summary>Perché Fabbri 1905 ha scelto di pubblicare un Bilancio di Sostenibilità?</summary>
+                           <div class="faq-risposta">
+                               <p>L'azienda ha intrapreso questo percorso per integrare e sistematizzare la 
+                                  sostenibilità nel suo operato, prepararsi ai futuri obblighi di rendicontazione 
+                                  e rendere noto ai propri stakeholder l'impegno verso una comunicazione sempre 
+                                  più trasparente e accessibile.</p>
+                           </div>
+                       </details>
+                   </div>
+               </div>
+           </details>
+
+           <!-- ho creato una sezione contatti per aggiungere un'ulteriore esempio di codice studiato nel corso "Tecnologie Web" - collassabile -->
+           <details class="sezione-collassabile" id="contatti">
+               <summary>
+                   <h2>Contattaci</h2>
+               </summary>
+               
+               <div class="contenuto-details">
+                   <p>Per qualsiasi domanda o richiesta di informazioni aggiuntive sulla nostra 
+                      strategia di sostenibilità, contattaci compilando il modulo sottostante:</p>
+                   
+                   <!-- form per richiesta info con uso di flexbox - con action="#" in pratica si rimane in questa pagina che viene ricaricata (è solo un segnaposto che rimanda all'url corrente)-->
+                   <form action="#" class="contact-form" method="post">
+                       
+                       <!-- prima riga del form con richiesta del nome e della mail del richiedente (entrambi obbligatori) -->
+                       <div class="form-row">
+                           <div class="form-field">
+                               <label for="nome-cognome">Nome e Cognome:</label>
+                               <input id="nome-cognome" 
+                                      name="user_name" 
+                                      placeholder="Il tuo nome completo" 
+                                      required 
+                                      type="text"/>
+                           </div>
+                           
+                           <div class="form-field">
+                               <label for="email-contatto">Email:</label>
+                               <input id="email-contatto" 
+                                      name="user_email" 
+                                      placeholder="la_tua_email@esempio.com" 
+                                      required 
+                                      type="email"/>
+                           </div>
+                       </div>
+                       
+                       <!-- seconda riga dove viene richiesto di dare un oggetto alla richiesta (campo obbligatorio) -->
+                       <div class="form-field form-field-full">
+                           <label for="oggetto-richiesta">Oggetto della richiesta:</label>
+                           <input id="oggetto-richiesta" 
+                                  name="subject" 
+                                  placeholder="Oggetto del messaggio" 
+                                  required 
+                                  type="text"/>
+                       </div>
+                       
+                       <!-- terza riga dove il richiedente dovrà inserire il testo del messaggio (testo obbligatorio) -->
+                       <div class="form-field form-field-full">
+                           <label for="messaggio-testo">Testo del messaggio:</label>
+                           <textarea id="messaggio-testo" 
+                                     name="user_message" 
+                                     placeholder="Scrivi qui il tuo messaggio..." 
+                                     required 
+                                     rows="6"></textarea>
+                       </div>
+                       
+                       <!-- bottone per invio della richiesta che avendo action="#" in pratica si rimane in questa pagina -->
+                       <div class="form-submit">
+                           <button type="submit" class="btn-invia">Invia Messaggio</button>
+                       </div>
+                   </form>
+               </div>
+           </details>
+       </div>
+   </main>
+
+   <!-- footer della pagina -->
+   <footer>
+       <div class="container">
+           <!-- contenuto del footer con flexbox dove indico l'autore e il progetto, inseriti anche 2 segnaposto che rimandano sempre qui per similitudine alle tipiche pagine aziendali -->
+           <div class="footer-content">
+               <div class="footer-info">
+                   <p>Pagina creata per il Project Work di Mirko Guidolin per il corso di laurea L-31.</p>
+                   <p>Titolo dell'elaborato: Soluzione web per la valorizzazione della sostenibilità: il caso Fabbri 1905</p>
+               </div>
+               
+               <div class="footer-links">
+                   <a href="#" class="footer-link">Informativa sulla Privacy</a>
+                   <a href="#" class="footer-link">Condizioni d'Uso</a>
+               </div>
+           </div>
+       </div>
+   </footer>
+
+   <script>
+       // javascript incluso direttamente nella pagina per non utilizzare altri file esterni, creato per la navigazione della pagina
+       
+       // Mostro/nascondo il menu su dispositivi mobili quando si clicca sull'hamburger
+       function toggleMenuMobile() {
+           var menu = document.getElementById('menu-principale');
+           menu.classList.toggle('aperto');
+       }
+       
+       // quando la pagina si carica leggo l'hash dall'URL per controllare quella che è stata selezionata e apro la sezione scelta
+       window.onload = function() {
+           var hashCorrente = window.location.hash;
+           if (hashCorrente) {
+               var elementoTarget = document.getElementById(hashCorrente.substring(1));
+               if (elementoTarget) {
+                   // verifico se l'elemento è un details e lo apro
+                   if (elementoTarget.tagName.toLowerCase() === 'details') {
+                       elementoTarget.open = true;
+                   }
+                   // faccio scroll con un po' di ritardo posizionandomi sulla sezione scelta per lasciare il tempo che la sezione si apra completamente
+                   setTimeout(function() {
+                       elementoTarget.scrollIntoView({ behavior: 'smooth' });
+                   }, 200);
+               }
+           }
+       };
+       
+       // gestisco i click sui link interni per creare un menu di navigazione che mantiene aperta solo la sezione che si sta visualizzando
+       var tuttiLink = document.getElementsByTagName('a');
+       for (var i = 0; i < tuttiLink.length; i++) {
+           if (tuttiLink[i].getAttribute('href') && tuttiLink[i].getAttribute('href').charAt(0) === '#') {
+               tuttiLink[i].onclick = function(evento) {
+                   var targetId = this.getAttribute('href').substring(1);
+                   var elementoDestinazione = document.getElementById(targetId);
+                   
+                   if (elementoDestinazione && elementoDestinazione.tagName.toLowerCase() === 'details') {
+                       // chiudo tutte le altre sezioni details prima di aprire quella selezionata
+                       var tuttiDetails = document.getElementsByTagName('details');
+                       for (var j = 0; j < tuttiDetails.length; j++) {
+                           if (tuttiDetails[j] !== elementoDestinazione) {
+                               tuttiDetails[j].open = false;
+                           }
+                       }
+                       // apro la sezione selezionata
+                       elementoDestinazione.open = true;
+                   }
+               };
+           }
+       }
+       
+       // gestisco il menù hamburger, se larghezza della finestra è > 768 considero di essere su desktop e chiudo il menù, altrimenti non fa nulla
+       window.onresize = function() {
+           var menu = document.getElementById('menu-principale');
+           // rimuovo la classe "aperto" quando si è in modalità desktop
+           if (window.innerWidth > 768) {
+               menu.classList.remove('aperto');
+           }
+       };
+   </script>
+</body>
+</html>
